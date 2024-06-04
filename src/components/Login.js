@@ -1,10 +1,11 @@
 import React,{useState} from 'react';
-
+import {useNavigate} from 'react-router-dom';
 export default function Login() {
 	const[email,setEmail]=useState("")
   const[password,setPassword]=useState("")
   const[cv,setCv]=useState(null)
   const[logindata,setLogindata]=useState([])
+  const navigate=useNavigate();
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setCv(file);
@@ -20,6 +21,7 @@ export default function Login() {
     setPassword("");
     setCv(null);
     console.log(logindata);
+    navigate('/quiz');
     if (cv) {
       const reader = new FileReader();
       reader.onload = function (e) {
@@ -31,7 +33,7 @@ export default function Login() {
   return (
 	<>
     <div className="flex justify-center items-center min-h-screen bg-gray-200">
-      <div className="flex flex-col px-6 py-12 lg:px-8 bg-white border-2 border-gray-300 rounded-lg shadow-lg sm:w-full sm:max-w-sm">
+      <div className="flex flex-col px-6 py-12 lg:px-8 bg-white border-2 border-gray-300 rounded-2xl shadow-lg sm:w-full sm:max-w-sm">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <h2 className="mt-0 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Login to your account</h2>
         </div>
@@ -47,7 +49,7 @@ export default function Login() {
               <div className="flex items-center mt-2 justify-between">
                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">Password</label>
                 <div className="text-sm">
-                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
+                  <a href="/forgot" className="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
                 </div>
               </div>
               <div className="mt-2">
@@ -70,12 +72,12 @@ export default function Login() {
         </div>
       </div>
     </div>
-	<div className="container">
+	<div className="container2">
   {
     logindata.map((element)=>{
       return(
         <div key={element.id}>
-          <h2>username: {element.username}</h2>
+          <h2>email: {element.email}</h2>
           <h2>password: {element.password}</h2>
           <h2>file: {element.cv ? element.cv.name : "No file uploaded"}</h2>
         </div>
