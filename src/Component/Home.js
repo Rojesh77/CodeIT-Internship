@@ -6,38 +6,38 @@ import './Home.css';
 export default function Home() {
   const navigate = useNavigate();
   const handleclk = () => {
-    navigate("/signup");
+    navigate("/fileuploadpage");
   };
   return (
     <>
       <div className="maing h-screen relative">
-        <nav className="bg-slate-50 font-serif shadow-sm w-full h-[70px] flex justify-between items-center px-4 text-slate-800">
+        <nav className="bg-slate-50 shadow-sm w-full h-[70px] flex justify-between items-center px-4 text-slate-800">
           <a href="#">
-          <div className="md:ml-6">
+          <div className="md:ml-4">
             <img className="h-12 w-18" src="./bb.jpg" alt="" />
           </div>
           </a>
           <div className="">
-            <ul className="md:flex space-x-8  hidden font-bold text-xl cursor-pointer">
+            <ul className="md:flex space-x-14 hidden text-xl cursor-pointer">
               <li>
-                <a className=" hover:text-red-700" href="/home">
+                <a className="hover:text-red-700  font-bold" href="/">
                   Home
                 </a>
               </li>
               <li>
-                <a className=" hover:text-red-700" href="/about">
+                <a className=" hover:text-red-700 font-semibold" href="/about">
                   About Us
                 </a>
               </li>
               <li>
-                <a className=" hover:text-red-700" href="/contact">
+                <a className=" hover:text-red-700 font-semibold" href="/contact">
                   Contact Us
                 </a>
               </li>
             </ul>
           </div>
-          <div className="bg-green-900 hidden md:block hover:bg-red-800 p-2 text-white rounded-md">
-            <a href="/signup">Login/Signup</a>
+          <div className="bg-green-900 hidden md:block hover:bg-black px-2 py-2 text-white rounded-lg">
+            <a href="/fileuploadpage">Login/Signup</a>
           </div>
           <div className="md:hidden">
             <a className="text-5xl" href="/login">
@@ -45,7 +45,7 @@ export default function Home() {
             </a>
           </div>
         </nav>
-        <div className="content mt-20 mb-16 mx-2">
+        <div className="content mt-[78px] mb-16 mx-2">
           <header className="md:flex  md:ml-6  shadow-slate-300">
             <div className="md:hidden sm:block">
               <img
@@ -54,10 +54,10 @@ export default function Home() {
                 alt="Error Loading"
               />
             </div>
-            <div className="md:ml-[70px] py-2 text-2xl z-10">
-              <motion.h1 initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, type: 'spring', stiffness: 15 }} className="md:mt-[36px] ml-4 font-semibold font-serif">
+            <div className="md:ml-[70px] py-2 text-4xl z-10">
+              <motion.h1 initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, type: 'spring', stiffness: 15 }} className="md:mt-[12px] ml-4 font-semibold">
                 <span className="text-orange-800">CodeIT:</span> Where
-                Innovation Meets Opportunity – Join Us <br /> and Code Your Future!
+                Innovation Meets Opportunity <br /> – Join Us  and Code Your Future!
               </motion.h1>
               <div className="instruc">
 
@@ -80,8 +80,8 @@ export default function Home() {
                   Submit your answers and code withing 1hr Timeperiod.
                 </li>
               </ul>
-              <div className="bg-red-800 hover:bg-green-900 text-white font-serif w-32 p-2 rounded-xl grid place-content-center m-4 md:mt-12 md:mb-10">
-                <button className="text-lg flex items-center" onClick={handleclk}>Tap to Begin</button>       
+              <div>
+                <button className="bg-red-800 hover:bg-green-900 text-white px-4 py-2 rounded-xl place-content-center m-4 md:mt-12 md:mb-10 text-xl flex items-center" onClick={handleclk}>Get Started</button>       
               </div>
             </div>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
                 transition={{ duration: 2 }}
               >
                 <img
-                  className="h-[600px] bg-transparent w-[800px]"
+                  className="h-[600px] bg-transparent w-[750px]"
                   src="./code.jpg"
                   alt="Error Loading"
                 />
@@ -100,7 +100,7 @@ export default function Home() {
             </div>
           </header>
         </div>
-          {/* <h1 className="text-center text-3xl font-semibold font-serif text-slate-700 mb-4">Upcoming classes</h1>
+          {/* <h1 className="text-center text-3xl font-semibold text-slate-700 mb-4">Upcoming classes</h1>
         <div class="animation h-auto py-12 w-full px-4 bg-gray-100 shadow-xl flex justify-center">
     <div class="scrolling-wrapper w-full">
       <div class="scrolling-content">
@@ -298,24 +298,28 @@ export default function Home() {
           <div className="flex flex-col md:items-center mb-8">
             <img className="h-18 w-28" src="./bb.jpg" alt="" />
             <a href="https://codeit.com.np/"><p className="text-xl font-semibold">info@codeit.com.np</p></a>
-          </div>
-          <div className="flex flex-col md:items-center">
-            <h2 className="text-2xl font-bold">Quick Links</h2>
-            <div className="border-b-2 w-24 h-1 border-yellow-800"></div>
-            <div className="mt-3 text-gray-200 flex flex-col md:items-center flex-wrap font-medium">
-              <p>
-                <a href="/home">Home</a>
-              </p>
-              <p>
-                <a href="/about">About Us</a>
-              </p>
-              <p>
-                <a href="/contact">Contact Us</a>
-              </p>
+            <div className="mt-2">
+            <p>9862130505 , 025-575163</p>
+            <p>Prithvi Path,Dharan</p>
             </div>
           </div>
           <div className="flex flex-col md:items-center">
-            <h2 className="text-2xl font-bold">Account Details:</h2>
+            <h2 className="text-2xl font-bold font-serif">Quick Links</h2>
+            <div className="border-b-2 w-24 h-1 border-yellow-800"></div>
+            <div className="mt-3 text-gray-200 flex flex-col md:items-center flex-wrap font-medium">
+              <p>
+                <a href="/" className="hover:text-gray-400">Home</a>
+              </p>
+              <p>
+                <a href="/about" className="hover:text-gray-400">About Us</a>
+              </p>
+              <p>
+                <a href="/contact" className="hover:text-gray-400">Contact Us</a>
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col md:items-center ">
+            <h2 className="text-2xl font-bold font-serif">Account Details:</h2>
             <div className="border-b-2 w-32 h-1 border-yellow-800"></div>
             <div className="mt-3 flex flex-col md:items-center flex-wrap text-gray-200 font-medium">
               <p>Bank: Nepal Bank Limited</p>
@@ -325,7 +329,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col md:items-center">
-            <h2 className="text-2xl font-bold">Download App</h2>
+            <h2 className="text-2xl font-bold font-serif">Download App</h2>
             <div className="border-b-2 w-32 h-1 border-yellow-800"></div>
             <div className="mt-3 flex flex-col md:items-center flex-wrap text-gray-200 font-medium">
               <p>Download our mobile app.</p>

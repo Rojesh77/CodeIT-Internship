@@ -1,3 +1,5 @@
+
+
 const express = require('express');
 const multer = require('multer');
 const nodemailer = require('nodemailer');
@@ -36,11 +38,11 @@ app.post('/sendEmail', upload.single('file'), (req, res) => {
   }
 
   let mailOptions = {
-    from: "Sender Name" <${process.env.EMAIL}>,
-    to: 'lrbrbs100@gmail.com',
-    subject: EMAIL of the qualified Examineer ${email},
-    html: <p>EMAIL of the qualified Examineer is :  ${email} <br>And here is his CV : </p><img src="cid:unique@nodemailer.com"/>,
-    // html : Here is your file ${file},
+    from: `"Sender Name" <${process.env.EMAIL}>`,
+    to: 'rojeshchudal000@gmail.com',
+    subject: `EMAIL of the qualified Examineer ${email}`,
+    html: `<p>EMAIL of the qualified Examineer is :  ${email} <br>And here is his CV : </p><img src="cid:unique@nodemailer.com"/>`,
+    // html : `Here is your file ${file}`,
     attachments: [
       {
         filename: file.originalname,
@@ -61,5 +63,5 @@ app.post('/sendEmail', upload.single('file'), (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(Server is running on http://localhost:${port});
+  console.log(`Server is running on http://localhost:${port}`);
 });

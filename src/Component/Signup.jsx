@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+
+
 function Signup() {
 	const[myusername,setMyusername]=useState("")
   const[myemail,setMyemail]=useState("")
@@ -18,8 +20,8 @@ function Signup() {
   }
   return (
     <>
-      <div className="flex justify-center items-center w-full  h-screen bg-gray-200">
-        <div className="flex flex-col px-6 py-12 lg:px-8 bg-white border-2 border-gray-300 shadow-lg rounded-2xl sm:w-full sm:max-w-sm">
+      <div className="flex justify-center items-center min-h-screen bg-gray-200">
+        <div className="flex flex-col px-6 py-12 lg:px-8 bg-white border-2 border-gray-300 rounded-lg shadow-lg sm:w-full sm:max-w-sm">
           <h2 className="mt-0 text-center text-2xl font-bold leading-9 tracking-tight">Signup to your account</h2>
           <form className="mt-8 space-y-6" action="/login" method="POST" onSubmit={handlesignup}>
             <div>
@@ -47,7 +49,7 @@ function Signup() {
           </div>
         </div>
       </div>
-	  <div className="container2">
+	  <div className="container">
 		{
 			signupdata.map((element)=>{
 			return(

@@ -1,0 +1,135 @@
+{
+  "questions": [
+    {
+      "question": "Write a function to find the largest among 3 numbers using findLargest function",
+      "functions": "findLargest",
+      "test" : [
+        { "input": [1, 2, 3], "expectedOutput": 3 },
+        { "input": [10, 5, 20], "expectedOutput": 20 },
+        { "input": [70, 50, 20], "expectedOutput": 70 },
+        { "input": [700, 50, 20], "expectedOutput": 700 },
+        { "input": [700, 500, 500], "expectedOutput": 700 },
+        { "input": [200, 500, 200], "expectedOutput": 500},
+        { "input": [700, 700, 200], "expectedOutput": 700 }
+      ],
+      "answer" : ""
+      
+    },
+    {
+      "question": "Write a function to find the smallest among 3 numbers using findSmallest function",
+      "functions": "findSmallest",
+      "test" : [
+        { "input": [4, 2, 3], "expectedOutput": 2 },
+        { "input": [10, 5, 20], "expectedOutput": 5 },
+        { "input": [70, 50, 20], "expectedOutput": 20 },
+        { "input": [700, 50, 20], "expectedOutput": 20 },
+        { "input": [700, 500, 500], "expectedOutput": 500 },
+        { "input": [200, 500, 200], "expectedOutput": 200},
+        { "input": [700, 700, 200], "expectedOutput": 200 }
+      ],
+      "answer" : ""
+    },
+    {
+      "question": "Write a function to find a sum of given array in a test code using findSum function",
+      "functions": "findSum",
+      "test" : [
+        { "input": [[1, 2, 3]], "expectedOutput": 6 },
+        { "input": [[10, 5, 20]], "expectedOutput": 35 },
+        { "input": [[7, 5, 2]], "expectedOutput": 14 }
+      ],
+      "answer" : ""
+    },
+    {
+      "question": "Write a function to reverse the given string in test code using findReversed function",
+      "functions": "findReversed",
+      "test" :[
+        { "input": "bishal", "expectedOutput": "lahsib" },
+        { "input": "rojesh", "expectedOutput": "hsejor" },
+        { "input": "biraj", "expectedOutput": "jarib" },
+        { "input": "aaa", "expectedOutput": "aaa" },
+        { "input": "a", "expectedOutput": "a" }
+      ],
+      "answer" : ""
+    },
+    {
+      "question": "Write a function to find the maximum element in array using findMax function",
+      "functions": "findMax",
+      "test" : [
+        { "input": [[1, 2, 3]], "expectedOutput": 3 },
+        { "input": [[10, 5, 20]], "expectedOutput": 20 },
+        { "input": [[70, 50, 20]], "expectedOutput": 70 },
+        { "input": [[700, 50, 20]], "expectedOutput": 700 },
+        { "input": [[700, 500, 500]], "expectedOutput": 700 },
+        { "input": [[200, 500, 200]], "expectedOutput": 500},
+        { "input": [[700, 700, 200]], "expectedOutput": 700 }
+      ],
+      "answer" : ""
+    },
+    {
+      "question": "Write a function to count the number of vowels in a given string using the countVowels function",
+      "functions": "countVowels",
+      "test": [
+        { "input": "hello", "expectedOutput": 2 },
+        { "input": "world", "expectedOutput": 1 },
+        { "input": "programming", "expectedOutput": 3 },
+        { "input": "algorithm", "expectedOutput": 3 },
+        { "input": "openai", "expectedOutput": 4 }
+      ],
+      "answer": ""
+    },
+    {
+      "question" : "Write a function to remove all the vowel from the given string using removeVowels function",
+      "functions" : "removeVowels",
+      "test" : [
+        {"input" : "hello" , "expectedOutput" :"hll"},
+        {"input" : "world" , "expectedOutput" :"wrld"},
+        {"input" : "programming" , "expectedOutput" :"prgrmmng"},
+        {"input" : "algorithm" , "expectedOutput" :"lgrthm"},
+        {"input" : "openai" , "expectedOutput" :"pn"}
+      ],
+      "answer" : ""
+    },
+    {
+      "question": "Write a function to calculate the factorial of a non-negative integer using the calculateFactorial function",
+      "functions": "calculateFactorial",
+      "test": [
+        { "input": 3, "expectedOutput": 6 },
+        { "input": 5, "expectedOutput": 120 },
+        { "input": 7, "expectedOutput": 5040 },
+        { "input": 10, "expectedOutput": 3628800 }
+      ],
+      "answer": ""
+    },
+    {
+      "question": "Write a function to check if a given string is a palindrome using the isPalindrome function.If yes,then the function must return 'yes' else 'no'",
+      "functions": "isPalindrome",
+      "test": [
+        { "input": "racecar", "expectedOutput": "yes" },
+        { "input": "level", "expectedOutput": "yes" },
+        { "input": "hello", "expectedOutput": "no" },
+        { "input": "redivider", "expectedOutput": "yes" },
+        { "input": "bishal", "expectedOutput": "no" }
+      ],
+      "answer": ""
+    },
+    {
+      "question": "Write a function to find the missing number in an array of consecutive numbers using the findMissingNumber function.For eg, INPUT = [10, 11, 12, 14, 15] OUTPUT = 13 ",
+      "functions": "findMissingNumber",
+      "test": [
+        { "input": [[1, 2, 3, 5, 6]], "expectedOutput": 4 },
+        { "input": [[10, 11, 12, 14, 15]], "expectedOutput": 13 }
+      ],
+      "answer": ""
+    },
+    {
+      "question": "Write a function to find the power of a number using the findPower function where function takes 2 number as input and returns the output.For eg,INPUT = [2,3] OUTPUT = 8, INPUT = [5,0] OUTPUT = 1",
+      "functions": "findPower",
+      "test": [
+        { "input": [2, 3], "expectedOutput": 8 },
+        { "input": [3, 4], "expectedOutput": 81 },
+        { "input": [5, 0], "expectedOutput": 1 }
+      ],
+      "answer": ""
+    }
+  ]
+}

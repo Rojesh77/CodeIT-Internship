@@ -1,0 +1,36 @@
+Question 1: Write a function to find the missing number in an array of consecutive numbers using the findMissingNumber function.For eg, INPUT = [10, 11, 12, 14, 15] OUTPUT = 13   [ STATUS :CONGRATULATION ! THIS ANSWER WAS CORRECT ]
+Answer:
+def findMissingNumber(arr):
+    n = len(arr)
+    expected_sum = (n + 1) * (arr[0] + arr[-1]) / 2
+    actual_sum = sum(arr)
+    return int(expected_sum - actual_sum)
+
+Question 2: Write a function to check if a given string is a palindrome using the isPalindrome function.If yes,then the function must return 'yes' else 'no'  [ STATUS : SORRY ! THIS ANSWER WAS INCORRECT ]
+Answer:
+def isPalindrome(s):
+    # Convert the string to lowercase and remove non-alphanumeric characters
+    s = ''.join(char.lower() for char in s if char.isalnum())
+    
+    # Check if the string is equal to its reverse
+    return s == s[::-1]
+
+Question 3: Write a function to find the smallest among 3 numbers using findSmallest function  [ STATUS :CONGRATULATION ! THIS ANSWER WAS CORRECT ]
+Answer:
+def findSmallest(a, b, c):
+    return min(a, b, c)
+
+Question 4: Write a function to calculate the factorial of a non-negative integer using the calculateFactorial function  [ STATUS : SORRY ! THIS ANSWER WAS INCORRECT ]
+Answer:
+def calculateFactorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * calculateFactorial(n - 1)
+
+Question 5: Write a function to remove all the vowel from the given string using removeVowels function  [ STATUS : SORRY ! THIS ANSWER WAS INCORRECT ]
+Answer:
+def removeVowels(string):
+    vowels = "aeiouAEIOU"
+    return ''.join(char for char in string if char not in vowels)
+

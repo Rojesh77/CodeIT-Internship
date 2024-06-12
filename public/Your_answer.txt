@@ -1,0 +1,24 @@
+Question 1: Write a function to find a sum of given array in a test code using findSum function  [ STATUS : SORRY ! THIS ANSWER WAS INCORRECT ]
+Answer:
+def findSum(name):
+	print("Hello, " + name + "!")
+
+
+Question 2: Write a function to check if a given string is a palindrome using the isPalindrome function.If yes,then the function must return 'yes' else 'no'  [ STATUS : SORRY ! THIS ANSWER WAS INCORRECT ]
+Answer:
+def isPalindrome(name):
+	print("Hello, " + name + "!")
+
+
+Question 3: Write a function to count the number of vowels in a given string using the countVowels function  [ STATUS : SORRY ! THIS ANSWER WAS INCORRECT ]
+Answer:
+def countVowels(name):
+	print("Hello, " + name + "!")
+
+
+Question 4: Write a function to remove all the vowel from the given string using removeVowels function  [ STATUS : SORRY ! THIS ANSWER WAS INCORRECT ]
+Answer:
+def removeVowels(name):
+	print("Hello, " + name + "!")
+
+

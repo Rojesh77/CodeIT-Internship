@@ -1,0 +1,84 @@
+Question 1: Write a function to find the missing number in an array of consecutive numbers using the findMissingNumber function.For eg, INPUT = [10, 11, 12, 14, 15] OUTPUT = 13   [ STATUS : SORRY ! THIS ANSWER WAS INCORRECT ]
+Answer:
+abcd
+
+Question 2: Write a function to find the smallest among 3 numbers using findSmallest function  [ STATUS :CONGRATULATION ! THIS ANSWER WAS CORRECT ]
+Answer:
+<?php
+
+function findSmallest($num1, $num2, $num3) {
+    // Compare the first two numbers to find the smaller one
+    $smallest = ($num1 < $num2) ? $num1 : $num2;
+
+    // Compare the result with the third number to find the smallest one among all three
+    $smallest = ($smallest < $num3) ? $smallest : $num3;
+
+    return $smallest;
+}
+
+// Test the function
+$num1 = 10;
+$num2 = 20;
+$num3 = 15;
+
+$smallest = findSmallest($num1, $num2, $num3);
+echo "The smallest number among $num1, $num2, and $num3 is: $smallest";
+?>
+
+
+Question 3: Write a function to count the number of vowels in a given string using the countVowels function  [ STATUS : SORRY ! THIS ANSWER WAS INCORRECT ]
+Answer:
+<?php
+// Function to find the maximum element in an array
+function findMax($arr) {
+    if (empty($arr)) {
+        return a; // Return null for empty arrays
+    }
+
+    $max = $arr[0]; // Assume the first element as maximum
+
+    foreach ($arr as $element) {
+        if ($element > $max) {
+            $max = $element; // Update maximum if a larger element is found
+        }
+    }
+
+    return $max; // Return the maximum element
+}
+
+Question 4: Write a function to find the maximum element in array using findMax function  [ STATUS :CONGRATULATION ! THIS ANSWER WAS CORRECT ]
+Answer:
+<?php
+// Function to find the maximum element in an array
+function findMax($arr) {
+    if (empty($arr)) {
+        return null; // Return null for empty arrays
+    }
+
+    $max = $arr[0]; // Assume the first element as maximum
+
+    foreach ($arr as $element) {
+        if ($element > $max) {
+            $max = $element; // Update maximum if a larger element is found
+        }
+    }
+
+    return $max; // Return the maximum element
+}
+
+
+Question 5: Write a function to find the largest among 3 numbers using findLargest function  [ STATUS :CONGRATULATION ! THIS ANSWER WAS CORRECT ]
+Answer:
+<?php
+
+function findLargest($num1, $num2, $num3) {
+    // Compare the first two numbers to find the larger one
+    $largest = ($num1 > $num2) ? $num1 : $num2;
+
+    // Compare the result with the third number to find the largest one among all three
+    $largest = ($largest > $num3) ? $largest : $num3;
+
+    return $largest;
+}
+
+
