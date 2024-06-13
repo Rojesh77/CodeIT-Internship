@@ -45,8 +45,8 @@ export default function Home() {
             </a>
           </div>
         </nav>
-        <div className="content mt-[78px] mb-16 mx-2">
-          <header className="md:flex  md:ml-6  shadow-slate-300">
+        <div className="content mt-20 mb-16 mx-2">
+          <header className="md:flex md:ml-6  shadow-slate-300">
             <div className="md:hidden sm:block">
               <img
                 className="h-[500px]"
@@ -54,10 +54,10 @@ export default function Home() {
                 alt="Error Loading"
               />
             </div>
-            <div className="md:ml-[70px] py-2 text-4xl z-10">
+            <div className="md:ml-[70px] py-2 text-3xl z-10">
               <motion.h1 initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, type: 'spring', stiffness: 15 }} className="md:mt-[12px] ml-4 font-semibold">
                 <span className="text-orange-800">CodeIT:</span> Where
-                Innovation Meets Opportunity <br /> – Join Us  and Code Your Future!
+                Innovation Meets Opportunity  – Join Us <br /> and Code Your Future!
               </motion.h1>
               <div className="instruc">
 
@@ -81,7 +81,7 @@ export default function Home() {
                 </li>
               </ul>
               <div>
-                <button className="bg-red-800 hover:bg-green-900 text-white px-4 py-2 rounded-xl place-content-center m-4 md:mt-12 md:mb-10 text-xl flex items-center" onClick={handleclk}>Get Started</button>       
+                <button className="bg-red-800 hover:bg-green-900 text-white px-4 py-2 rounded-xl place-content-center m-4 md:mt-8 md:mb-10 text-xl flex items-center" onClick={handleclk}>Get Started</button>       
               </div>
             </div>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
                 transition={{ duration: 2 }}
               >
                 <img
-                  className="h-[600px] bg-transparent w-[750px]"
+                  className="h-[600px] bg-transparent w-[870px]"
                   src="./code.jpg"
                   alt="Error Loading"
                 />
@@ -289,7 +289,7 @@ export default function Home() {
     </div>
   </div> */}
 
-        <footer className="p-2 md:px-8 text-white flex flex-col pb-12 bg-green-950 w-full h-auto pt-8 md:flex-row flex-wrap md:justify-between md:mt-20 relative">
+        <footer className="p-2 md:px-8 text-white flex flex-col pb-12 bg-green-950 w-full h-auto pt-8 md:flex-row flex-wrap md:justify-between md:mt-24 relative">
           {/* <div className="absolute top-0 left-0 w-[100%] overflow-hidden">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill relative block "></path>

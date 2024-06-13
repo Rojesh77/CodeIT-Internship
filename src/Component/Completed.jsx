@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { IoCheckmarkDone } from "react-icons/io5";
-
 const Completed = ({ imageURL, file, downloadFile, email }) => {
   const [fileContent, setFileContent] = useState(null);
   const[isLoadings , setIsLoadings] = useState(false)
@@ -76,14 +75,16 @@ const Completed = ({ imageURL, file, downloadFile, email }) => {
   };
 
   return (
-    
-    <div>
-      <div>
+  <>
+  <div>
+    <div className='h-[100vh] grid place-content-center'>
+      <div className='border border-white p-6 rounded-2xl'>
+        <div>
         <h1 className='text-xl font-semibold text-white'>Download your answer and review your code</h1>
       </div>
       <div className='mt-4'>
         <button
-          className='text-lg bg-red-700 border border-teal-700 rounded-lg text-white hover:bg-teal-700 px-2'
+          className='text-lg bg-red-700 border border-teal-700 rounded-lg text-white hover:bg-teal-700 px-2 py-1 mb-2'
           onClick={downloadFile}
         >
           Click Here
@@ -96,9 +97,12 @@ const Completed = ({ imageURL, file, downloadFile, email }) => {
         </button> */}
         {/* <h1 className='text-red-100'>Your CV has been received by HR of codeIT. Stay tuned! You will get a call for an interview.</h1> */}
         {isLoadings && <div className="spinner">Don't exit , Sending Mail to HR...</div> }
-        {!isLoadings && <div className="spinner flex"> <h1 className='flex text-slate-400 text-xl m-2'><IoCheckmarkDone className='text-xl font-extrabold text-green-700 m-1'/>Your details has been received by HR of codeIT. Stay tuned! You will get a call for an interview</h1></div>}
+        {!isLoadings && <div className="spinner flex"> <h1 className='flex text-slate-400 text-xl m-2'><IoCheckmarkDone className='text-xl font-extrabold text-black-900 '/>Your details has been received by HR of codeIT. <br /> Stay tuned! You will get a call for an interview</h1></div>}
+      </div>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 
